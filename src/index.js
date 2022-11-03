@@ -12,6 +12,9 @@ import Message from './components/Task6/Message';
 import Click from './components/Task7/Click';
 import CheckboxAgeConfirmation from './components/Task8/CheckboxAgeConfirmation';
 import ShoppingCart from './components/Task9/ShoppingCart';
+import Menu from './components/Task10/Menu';
+import Login from './components/Task11/Login';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -26,6 +29,8 @@ root.render(
     <Click result={10} />
     <CheckboxAgeConfirmation />
     <ShoppingCart />
+    <Menu />
+    <Login />
 
   </React.StrictMode>
 );

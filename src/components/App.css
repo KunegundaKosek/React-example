@@ -8,6 +8,10 @@
     font-size: 35px;
 }
 
+ol>li {
+    background-color: gray;
+}
+
 input[type="text"],
 .btn {
     padding: 15px 35px;
@@ -60,4 +64,35 @@ input[type="text"],
     cursor: pointer;
     outline: none;
     margin: 10px;
+
+}
+
+.enabled {
+    line-height: 160%;
+    padding: 20px 10px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+
+}
+
+.disabled {
+    line-height: 160%;
+    padding: 20px 10px;
+    cursor: pointer;
+    color: black;
+    color: gray;
+
+}
+
+li:nth-child(even) {
+    background-color: #eee;
+}
+
+li:nth-child(odd) {
+    background-color: #ccc;
+}
+
+.login {
+    margin: 20px;
 }
