@@ -14,6 +14,12 @@ import CheckboxAgeConfirmation from './components/Task8/CheckboxAgeConfirmation'
 import ShoppingCart from './components/Task9/ShoppingCart';
 import Menu from './components/Task10/Menu';
 import Login from './components/Task11/Login';
+import Cantor from './components/Task12/Cantor';
+import RandomText from './components/Task13/RandomText';
+import Clicker from './components/Task14/Clicker';
+import Users from './components/Task15/Users';
+import FormValidation from './components/Task16/FormValidation';
+import ToDoApp from './components/Task17/ToDoApp';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -31,6 +37,12 @@ root.render(
     <ShoppingCart />
     <Menu />
     <Login />
+    <Cantor />
+    <RandomText />
+    <Clicker />
+    <Users />
+    <FormValidation />
+    <ToDoApp />
 
   </React.StrictMode>
 );

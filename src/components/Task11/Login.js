@@ -10,27 +10,19 @@ class Login extends Component {
         number: "2"
     }
 
-    hanldeCityChange = (event) => {
+    handleChange = e => {
+        // console.log(e.target.type)
+        if (e.target.type === "checkbox") {
+            this.setState({
+                [e.target.name]: e.target.checked
+            })
+        } else {
+            this.setState({
+                [e.target.name]: e.target.value
+            })
+        }
         this.setState({
-            city: event.target.value
-        })
-    }
-
-    hanldeTextChange = (event) => {
-        this.setState({
-            text: event.target.value
-        })
-    }
-
-    handleLikeChange = e => {
-        this.setState({
-            isLiked: e.target.checked
-        })
-    }
-
-    handleVisitsNumberChange(e) {
-        this.setState({
-            number: e.target.value
+            [e.target.name] : e.target.value
         })
     }
 
@@ -43,27 +35,41 @@ class Login extends Component {
                 <h2 className='project'>Projekt 11</h2>
                 <label>Podaj miasto
                     <input
+                        name="city"
+                        onChange={this.handleChange}
                         value={this.state.city}
                         type="text"
-                        onChange={this.hanldeCityChange}
-                        className='login'
-                    ></input>
+                       
+                    />
                 </label>
                 <br />
 
-                <label>Napisz coś o swoim mieście
-                    <textarea className='login' value={this.state.text} onChange={this.hanldeTextChange}></textarea>
+                <label>Napisz coś o tym mieście
+                    <textarea
+                        name="text"
+                        value={this.state.text}
+                        onChange={this.handleChange}
+                    ></textarea>
                 </label>
                 <br />
 
                 <label>
                     Czy lubisz to miasto?
-                    <input className='login' type="checkbox" checked={this.state.isLiked} onChange={this.handleLikeChange} />
+                    <input
+                        name="isLiked"
+                        type="checkbox"
+                        checked={this.state.isLiked}
+                        onChange={this.handleChange}
+                    />
                 </label>
                 <br />
 
                 <label>Ile razy byliście w tym mieście
-                    <select value={this.state.number} onChange={this.handleVisitsNumberChange.bind(this)} >
+                    <select
+                        name="number"
+                        value={this.state.number}
+                        onChange={this.handleChange}
+                    >
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>

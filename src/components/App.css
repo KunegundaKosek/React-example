@@ -8,11 +8,9 @@
     font-size: 35px;
 }
 
-ol>li {
-    background-color: gray;
-}
 
-input[type="text"],
+
+
 .btn {
     padding: 15px 35px;
     border: 2px solid black;
@@ -30,6 +28,7 @@ input[type="text"],
 
 .btnLine {
     display: flex;
+    justify-content: center;
 }
 
 .container {
@@ -85,14 +84,44 @@ input[type="text"],
 
 }
 
+/* 
 li:nth-child(even) {
     background-color: #eee;
 }
 
 li:nth-child(odd) {
     background-color: #ccc;
-}
+} */
 
 .login {
     margin: 20px;
+}
+
+.users {
+    text-align: center;
+
+}
+
+.users div {
+    border-top: 2px solid white;
+    padding-top: 20px;
+    margin: 30px;
+}
+
+label {
+    display: block;
+}
+
+.span {
+    color: red;
+    display: block;
+    font-size: 10px;
+}
+
+.form {}
+
+.app {}
+
+.spanToDo {
+    font-weight: 100;
 }
